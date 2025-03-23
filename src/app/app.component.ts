@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { LoginComponent } from './login/login.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
+  standalone: true,
+  imports: [RouterModule, ProductListComponent]
 })
 export class AppComponent {
   constructor(private dialog: MatDialog) {}
