@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+
+body, html { 
+    width: 100%; 
+    height: 100%; 
+    overflow-x: hidden; 
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    background: #e8dfd0; 
+    width: 100%;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw;
+    gap: 3vw;
+    width: 100%;
+    min-height: 100vh; 
+    background: #e8dfd0; 
+}
+
+.product-image {
+    flex: 1;
+    max-width: 30%;
+    display: flex;
+    justify-content: center;
+    height: 80%; 
+    position: relative; 
+    top: 90px; 
+    left: 20px; 
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-details {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #704f40;
+    padding: 20px; 
+    position: relative; 
+    top: -400px; 
+    right: -700px; 
+}
+
+.product-title {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #704f40;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 25px;
+    color: #5a4034;
+    margin-bottom: 15px;
+}
+
+.size,
+.price {
+    font-size: 25px;
+    font-weight: bold;
+    color: #704f40;
+    margin-bottom: 10px;
+}
+
+.product-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    background: #704f40;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #5a4034;
+    transform: scale(1.05);
+}
+
+.btn i {
+    font-size: 20px;
+}

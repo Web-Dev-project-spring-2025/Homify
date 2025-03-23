@@ -1,0 +1,36 @@
+<div class="product" *ngIf="product">
+    <div class="product-content">
+        <div class="product-image">
+            <img [src]="product.image" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <h3 class="product-title">{{ product.name }}</h3>
+            <p class="description">{{ product.description }}</p>
+            <p class="size"><strong>Size:</strong> {{ product.size }}</p>
+            <p class="price"><strong>Price:</strong> ₸{{ product.price }}</p>
+
+            <div class="product-buttons">
+                <button class="btn" (click)="addToCart(product)">Add to Cart
+                    <i class='bx bx-cart-alt'></i>
+                </button>
+
+                <button class="btn" (click)="share('facebook')">
+                    <i class="bx bxl-facebook"></i> Facebook
+                </button>
+                <button class="btn" (click)="share('whatsapp')">
+                    <i class="bx bxl-whatsapp"></i> WhatsApp
+                </button>
+                <button class="btn" (click)="share('twitter')">
+                    <i class="bx bxl-twitter"></i> X (Twitter)
+                </button>
+                <button class="btn" (click)="share('email')">
+                    <i class="bx bx-envelope"></i> Mail
+                </button>
+
+                <button class="btn" (click)="copyLink()">
+                    <i class="bx bx-link"></i> Копировать ссылку
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
