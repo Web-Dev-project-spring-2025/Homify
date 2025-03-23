@@ -15,5 +15,11 @@ export class AppComponent {
       width: '400px'
     });
   }
+  openHelp() {
+    this.dialog.open(HelpPopupComponent, {
+      width: '400px'
+    });
+  }
+  
 }
 
