@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { LoginComponent } from './login/login.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { RouterModule } from '@angular/router';
+import { HelpPopupComponent } from './help-popup/help-popup.component';
 
 @Component({
   selector: 'app-root',
