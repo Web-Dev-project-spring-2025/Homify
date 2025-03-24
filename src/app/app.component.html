@@ -1,24 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>Homify</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/Homify/src/app/app.component.css">
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-</head>
-
-<body>
-
-  <div class="navbar">
+<div class="navbar">
+  
     <div class="menu-container">
       <div class="menu">☰</div>
       <div class="menu-panel">
         <h2 class="menu-title">
           <img src="public/homify.png" alt="Menu">
-        </h2>
-        
+        </h2>    
         <ul>
           <li><a href="#">Living room</a></li>
           <li><a href="#">Kitchen</a></li>
@@ -34,8 +21,7 @@
       <i class="bx bx-search search-icon"></i>
       <input class="search" type="text" placeholder="Search">
     </div>
-
-
+  
   <div class="link-section">
     <div class="links" (click)="openLogin()">
         <i class='bx bx-user'></i>
@@ -48,8 +34,6 @@
     </div>
   </div>
 
-
-
   <script>
     function toggleMenu() {
       const menuPanel = document.getElementById('menuPanel');
@@ -57,5 +41,3 @@
     }
   </script>
 <router-outlet></router-outlet>
-</body>
-</html>
