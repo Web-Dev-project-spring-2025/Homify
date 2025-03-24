@@ -3,14 +3,14 @@ import { Product } from '../models';
 export const PRODUCTS: Product[] = [
   {
     id: 1,
-    name: 'DIFFUSERS WITH SANTAL WOOD RATTAN STICKS',
-    description: `Diffusers with rattan sticks allow you to evenly distribute the fragrance in any space.
+    name: 'SANTAL OUD REED DIFFUSERS',
+    description: `Diffusers with rattan sticks allow you to evenly distribute the aroma in any space.
 
-Santal Oud | Fragrance with hints of amber and rose invites you on a mysterious spiritual journey.
+Santal Oud | The aroma with shades of amber and rose invites you to a mysterious spiritual journey.
 
 Fragrance notes
 Top note: rose
-Heart notes: sandalwood.
+Heart note: sandalwood.
 Base note: patchouli.`,
     category: 'Aromas',
     size: '100 ml',
