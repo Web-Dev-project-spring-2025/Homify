@@ -84,6 +84,9 @@ body, html {
     color: #5a4034;
     margin-bottom: 15px;
     max-width: 80%;
+   word-wrap: break-word;    
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 .size,
