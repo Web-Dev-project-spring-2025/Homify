@@ -107,3 +107,12 @@
 .create-account-link:hover {
     text-decoration: underline;
 }
+input {
+    outline: none;
+    transition: border 0.3s ease; 
+  }
+  
+input:focus {
+    box-shadow: 0 0 8px #7c5d30; 
+  }
+  

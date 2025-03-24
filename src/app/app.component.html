@@ -41,7 +41,7 @@
         <i class='bx bx-user'></i>
         <span>LOG IN</span>
       </div>
-      <div class="links">
+      <div class="links" (click)="openHelp()">
         <i class='bx bx-help-circle'></i>
         <span>HELP</span>
       </div>
@@ -56,5 +56,6 @@
       menuPanel.classList.toggle('open');
     }
   </script>
+<router-outlet></router-outlet>
 </body>
 </html>

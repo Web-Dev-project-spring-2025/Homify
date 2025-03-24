@@ -3,11 +3,19 @@ import { Product } from '../models';
 export const PRODUCTS: Product[] = [
   {
     id: 1,
-    name: 'ЛОСЬОН ДЛЯ ТЕЛА WHITE LOTUS',
-    description: 'Ароматизированный крем для рук и тела. Делает кожу мягкой и увлажненной и придает ей легкое благоухание.',
+    name: 'DIFFUSERS WITH SANTAL WOOD RATTAN STICKS',
+    description: `Diffusers with rattan sticks allow you to evenly distribute the fragrance in any space.
+
+Santal Oud | Fragrance with hints of amber and rose invites you on a mysterious spiritual journey.
+
+Fragrance notes
+Top note: rose
+Heart notes: sandalwood.
+Base note: patchouli.`,
     category: 'Aromas',
-    size: '500 ml',
-    price: 11980,
-    image: "https://static.zarahome.net/assets/public/2412/449a/820b4f8f8c04/7e96969107a2/40423701601-a7/40423701601-a7.jpg?ts=1731490509812&f=auto&w=1536"
+    size: '100 ml',
+    price: 12990,
+    image: "https://static.zarahome.net/8/photos4/2025/V/4/1/p/0490/703/724/0490703724_2_7_1.jpg?t=1694175306895&imwidth=1536",
+    /*images: ["https://static.zarahome.net/8/photos4/2025/V/4/1/p/0490/703/724/0490703724_2_2_1.jpg?t=1694425548264&imwidth=1536", "https://static.zarahome.net/8/photos4/2025/V/4/1/p/0490/703/724/0490703724_2_3_1.jpg?t=1694425548264&imwidth=1536"]*/
   },
 ];

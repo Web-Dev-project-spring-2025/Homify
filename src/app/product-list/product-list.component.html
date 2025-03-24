@@ -1,0 +1,8 @@
+<div class="product-list">
+    <div class="product-card" *ngFor="let product of filteredProducts">
+      <img [src]="product.image" [alt]="product.name">
+      <a *ngIf="product.id" [routerLink]="['/product', product.id]">{{ product.name }}</a>
+      <p>{{ product.price | currency }}</p>
+    </div>
+  </div>
+  
