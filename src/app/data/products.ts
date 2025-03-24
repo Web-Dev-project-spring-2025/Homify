@@ -5,17 +5,350 @@ export const PRODUCTS: Product[] = [
     id: 1,
     name: 'SANTAL OUD REED DIFFUSERS',
     description: `Diffusers with rattan sticks allow you to evenly distribute the aroma in any space.
-
-Santal Oud | The aroma with shades of amber and rose invites you to a mysterious spiritual journey.
-
-Fragrance notes
-Top note: rose
-Heart note: sandalwood.
-Base note: patchouli.`,
+                 Santal Oud | The aroma with shades of amber and rose invites you to a mysterious spiritual journey.
+                 Fragrance notes
+                 Top note: rose
+                 Heart note: sandalwood.
+                 Base note: patchouli.`,
     category: 'Aromas',
     size: '100 ml',
     price: '12 990',
-    image: "https://static.zarahome.net/8/photos4/2025/V/4/1/p/0490/703/724/0490703724_2_7_1.jpg?t=1694175306895&imwidth=1536"
+    image: "assets/aromas/santal.jpg"
+  },
+  {
+    id: 2,
+    name: 'SILK PEONY RATTAN REED DIFFUSERS',
+    description: `Diffusers with rattan sticks allow you to evenly distribute the fragrance in any space.
+    Silk Peony | Airy floral bouquet. Sensual silky fragrance with bright touches of red berries and rose absolute. The scent trail includes shades of white musk and talc.
+    Fragrance notes
+    Top notes: citrus, rose, elemi resin, blackcurrant.
+    Heart notes: transparent floral notes, rose, peony, jasmine.
+    Base notes: musk, amber, violet, powdery notes.`,
+    category: 'Aromas',
+    size: '120 ml',
+    price: '12 990',
+    image: "assets/aromas/silkpeony.jpg"
+  },
+  {
+    id: 3,
+    name: 'DARK AMBER REED DIFFUSERS',
+    description: `Diffusers with rattan reeds allow you to evenly distribute the scent in any space.
+    Dark Amber | Warm notes of sandalwood and amber complement the spicy tones, giving the fragrance a unique personality.
+    Aromatic notes: amber, cedar wood and ylang-ylang.
+    INSTRUCTIONS FOR USE
+    Remove the string that connects the rattan reeds and insert them into the bottle. The intensity depends on the chosen fragrance, the number of reeds in the bottle and the air temperature in the room. It is recommended to turn the reeds once a week.`,
+    category: 'Aromas',
+    size: '200 ml',
+    price: '18 990',
+    image: "assets/aromas/darkamber.jpg"
+  },
+  {
+    id: 4,
+    name: 'THE SIGNATURE COLLECTION I REED DIFFUSERS',
+    description: `Diffusers with rattan reeds allow you to evenly distribute the aroma in any space.
+    The Signature Collection I | The freshness of eucalyptus and the sweetness of fig are combined with woody notes and shades of tobacco flowers.
+    Fragrance notes
+    Top notes: eucalyptus, fig.
+    Heart notes: violet, tobacco flowers.
+    Base notes: sandalwood, birch.`,
+    category: 'Aromas',
+    size: '100 ml',
+    price: '18 990',
+    image: "assets/aromas/signaturecollect.jpg"
+  },
+  {
+    id: 5,
+    name: 'LIQUID GEL FOR HANDS AND BODY ABSOLUTE LINEN',
+    description: `Scented liquid hand soap in a bottle with a dispenser. Contains aloe vera extract and glycerin, which moisturize and soften the skin.
+    Absolute Linen | The aroma is characterized by extraordinary freshness thanks to notes of blackcurrant and light touches of mandarin. Woody shades create a warm atmosphere`,
+    category: 'Aromas',
+    size: '250 ml',
+    price: '3 990',
+    image: "assets/aromas/absolutelinen.jpg"
+  },
+  {
+    id: 6,
+    name: 'TOMATO FIELDS SCENTED CANDLE',
+    description: `Aromatic candle made of vegetable wax.
+    Tomato Fields | A calm walk through a fragrant garden, where a variety of herbs fill the air with enchanting scents. The vegetable freshness of tomato leaves intertwines with the crunchy notes of celery, creating a bright green accord.
+    Fragrance composition
+    Top notes: tomato leaves, pepper, vegetable accord.
+    Heart notes: garden herbs, celery.
+    Base notes: spices, patchouli, musk.
+    Estimated duration: 55 hours`,
+    category: 'Aromas',
+    size: '320 g',
+    price: '15 990',
+    image: "assets/aromas/tomato.jpg"
+  },
+  {
+    id: 7,
+    name: ' LAUREL BREEZE SCENTED CANDLE',
+    description: `Aromatic candle made of vegetable wax.
+    Laurel Breeze | The captivating aroma of laurel, rich in camphor notes, unfolds in combination with spicy spices and soothing lavender, bringing the spirit of tradition and a sense of calm into the home.
+    Aroma composition
+    Top notes: fresh spices, laurel leaves.
+    Heart notes: aromatic herbs, wild flowers, lavender.
+    Base notes: cedar, pine accord, juicy woody notes.
+    Estimated duration: 55 hours`,
+    category: 'Aromas',
+    size: '320 g',
+    price: '15 990',
+    image: "assets/aromas/breeze.jpg"
+  },
+  {
+    id: 8,
+    name: 'LIQUID HAND SOAP BLACK VANILLA',
+    description: `Diffusers with rattan sticks allow you to evenly distribute the aroma in any space.
+    Santal Oud | The aroma with shades of amber and rose invites you to a mysterious spiritual journey.
+    Fragrance notes
+    Top note: rose
+    Heart note: sandalwood.
+    Base note: patchouli.`,
+    category: 'Aromas',
+    size: '500 ml',
+    price: '5 590',
+    image: "assets/aromas/blackvanilla.jpg"
+  },
+  {
+    id: 9,
+    name: 'LIQUID HAND SOAP CLEAN BLOSSOM',
+    description: `Aromatic liquid soap for hands and body. Contains aloe vera extracts and glycerin, which moisturize and soften the skin.
+    Clean Blossom is a bright bouquet with a sophisticated woody aroma. An expressive composition, including three noble white flowers, the quintessence of multifaceted beauty. Enveloping jasmine heart notes acquire a special appeal thanks to citrus shades of orange blossom and exotic sensual touches of vanilla blossom.
+    Fragrance composition
+    Top: petitgrain, mandarin, pineapple, bergamot.
+    Heart notes: orange blossom, spicy lavender, jasmine, vanilla.
+    Base: vanilla, tonka beans, vetiver, ambroxol.`,
+    category: 'Aromas',
+    size: '500 ml',
+    price: '5 990',
+    image: "assets/aromas/blossom.jpg"
+  },
+  {
+    id: 10,
+    name: 'CAR AIR FRESHENER ETERNAL MUSK',
+    description: `Car sachet with clip.
+    Eternal Musk | A vibrant fragrance with pronounced woody notes, shaded with sophisticated floral touches.
+    Fragrance notes
+    Top notes: bergamot and violet.
+    Heart notes: vetiver.
+    Base notes: tonka bean.
+    INSTRUCTIONS FOR USE
+    Remove the product from the packaging and attach it to the dashboard using the clip on the back (a good place is the protective grille of the air conditioner). The duration of use depends on factors such as temperature and lighting.`,
+    category: 'Aromas',
+    size: '4/4.4/1 cm',
+    price: '9 990',
+    image: "assets/aromas/eternalmusk.jpg"
+  },
+  {
+    id: 11,
+    name: 'HOME FRAGRANCE NECTAR AMBRÉ',
+    description: `The spray allows you to easily and quickly spread the aroma in any space.
+    Nectar Ambré is a contrasting, sensual and rich aroma, which is framed by notes of amber and Indian jasmine. This tempting aroma with sparkling notes of lemon zest and smoky touches of sandalwood will immerse your senses in an atmosphere of bliss and comfort.
+    Aroma composition
+    Head: lemon zest, jasmine absolute.
+    Heart notes: rose extract, almond, Madagascar vanilla.
+    Base: smoky sandalwood, amber.`,
+    category: 'Aromas',
+    size: '230 ml',
+    price: '15 990',
+    image: "assets/aromas/nectar.jpg"
+  },
+  {
+    id: 12,
+    name: 'HAND CREAM WHITE JASMINE',
+    description: `Scented hand cream in mini packaging. Makes skin smooth and moisturized, imparts a light fragrance.
+    White Jasmine | Fans of floral compositions will appreciate the natural charm of this fragrance. A bouquet of wild flowers includes enchanting notes of jasmine and fresh, delicate shades of lily of the valley.
+    Aroma composition
+    Top notes: fresh shades, greenery, cucumber.
+    Heart notes: floral, jasmine, lily of the valley.
+    Base: musk.`,
+    category: 'Aromas',
+    size: '30 ml',
+    price: '3 990',
+    image: "assets/aromas/whitejasmin.jpg"
+  },
+  {
+    id: 13,
+    name: 'POETIC MIND REED DIFFUSERS',
+    description: `Diffusers with rattan reeds allow you to evenly distribute the scent in any space.
+    Poetic Mind | A harmonious combination of woody notes, lemon zest and subtle shades of magnolia.
+    Aromatic notes: bergamot, almond blossom and white wood species.
+    INSTRUCTIONS FOR USE
+    Remove the string that connects the rattan reeds and insert them into the bottle. The intensity depends on the chosen fragrance, the number of reeds in the bottle and the air temperature in the room. It is recommended to turn the reeds once a week.`,
+    category: 'Aromas',
+    size: '500 ml',
+    price: '29 990',
+    image: "assets/aromas/poeticmind.jpg"
+  },
+  {
+    id: 14,
+    name: 'VIBRANT ROSE REED DIFFUSER ',
+    description: `Diffusers with rattan sticks for even distribution of the fragrance in any room.
+    Vibrant Rose is a magnificent contrast of light and shadow, sensuality and magic. This fragrance is like the personification of night in a rose garden. The elegance of the centifolia rose is enhanced by magnetic patchouli notes and enticing shades of vanilla. The fragrance awakens desire and creates an atmosphere full of mystery.
+    Fragrance notes
+    Top notes: strawberry, raspberry, blackcurrant, pink grapefruit.
+    Heart notes: cherry, centifolia rose.
+    Base notes: patchouli, musk, vanilla.`,
+    category: 'Aromas',
+    size: '190 ml',
+    price: '18 990',
+    image: "assets/aromas/vibrantrose.jpg"
+  },
+  {
+    id: 15,
+    name: ' LIQUID SOAP AQUA BERGAMOT',
+    description: `Diffusers with rattan sticks allow you to evenly distribute the aroma in any space.
+    Santal Oud | The aroma with shades of amber and rose invites you to a mysterious spiritual journey.
+    Fragrance notes
+    Top note: rose
+    Heart note: sandalwood.
+    Base note: patchouli.`,
+    category: 'Aromas',
+    size: '500 ml',
+    price: '5 990',
+    image: "assets/aromas/bergamot.jpg"
+  },
+  {
+    id: 16,
+    name: 'CHILDREN COTTON RUG WITH MULTICOLOR SPOTTLES',
+    description: `Children's carpet made of cotton with multi-colored speckles.
+    The round carpet has a diameter of 140 cm.
+    The rectangular carpet with tassels on the corners has a size of 150 x 200 cm.
+    It is recommended to clean with a damp white kitchen towel and air dry.`,
+    category: 'Children',
+    size: '150*200 cm',
+    price: '49 990',
+    image: "assets/children/cottonrug.jpg"
+  },
+  {
+    id: 17,
+    name: "CHILDREN'S TABLE LAMP",
+    description: `Children's table lamp with wooden beads. Bulb not included. To avoid possible risks, the power cord or lamp cord should be replaced by a qualified specialist if damaged. Base: E14.`,
+    category: 'Children',
+    size: '36/32/32 cm',
+    price: '36 990',
+    image: "assets/children/lamp.jpg"
+  },
+    {
+    id: 18,
+    name: "CHILDREN'S WALL MIRROR IN A RATTAN FRAME HOUSE",
+    description: `Children's wall mirror in a rattan frame "House". Two closing shutters, two hooks for fixing to the wall at the back.`,
+    category: 'Children',
+    size: '47/36/8 cm',
+    price: '29 990',
+    image: "assets/children/framehouse.jpg"
+  },
+  {
+    id: 19,
+    name: "LARGE CHILDREN'S BASKET 'HOUSE'",
+    description: `Children's rattan storage basket "House".`,
+    category: 'Children',
+    size: '26/22/28 cm',
+    price: '18 990',
+    image: "assets/children/baskethouse.jpg"
+  },
+  {
+    id: 20,
+    name: "CHILDREN'S METAL BASKETS WITH HANDLE",
+    description: `Children's metal storage basket with contrast folding handles.`,
+    category: 'Children',
+    size: '16/32/23 cm',
+    price: '12 990',
+    image: "assets/children/metalbaskets.jpg"
+  },
+  {
+    id: 21,
+    name: "CHILDREN'S SQUARE PHOTO FRAME 'DUCKLING'",
+    description: `Square photo frame covered with fabric.
+For photos measuring 11 x 11 cm.`,
+    category: 'Children',
+    size: '11*11 cm',
+    price: '9 990',
+    image: "assets/children/duckling.jpg"
+  },
+  {
+    id: 22,
+    name: "SET OF CHILDREN'S FURNITURE HANDLES 'CLOUDS' (2 PCS.)",
+    description: `Children's furniture handles for cabinets and furniture made of ceramics in the shape of clouds.
+Set of 2 pcs.`,
+    category: 'Children',
+    size: '3.5/4.5/6.5 cm',
+    price: '2 590',
+    image: "assets/children/clouds.jpg"
+  },
+  {
+    id: 23,
+    name: "CHILDREN'S SUITCASE WITH 'MOON' PRINT",
+    description: `A children's suitcase with a handle and a metal clasp. The large model has a "Mouse and Moon" print, while the small model has the inscription Welcome Baby.`,
+    category: 'Children',
+    size: '35/23/10 cm',
+    price: '15 990',
+    image: "assets/children/moon.jpg"
+  },
+  {
+    id: 24,
+    name: "CHILDREN'S ACCORDION FOLDER",
+    description: `Children's folder with contrasting edge trim, an internal accordion block with 9 compartments and an elastic band fastener.`,
+    category: 'Children',
+    size: '22/17/10 cm',
+    price: '6 990',
+    image: "assets/children/folder.jpg"
+  },
+  {
+    id: 25,
+    name: "PEANUTS™ COTTON CHILDREN'S PENCIL CASE",
+    description: `Children's cotton pencil case featuring Peanuts™ characters. Contrast zip at top.`,
+    category: 'Children',
+    size: '9/20/8 cm',
+    price: '9 990',
+    image: "assets/children/case.jpg"
+  },
+  {
+    id: 26,
+    name: "SOAP DISPENSER 'STAR' FOR CHILDREN",
+    description: `Children's rubberized ceramic soap dispenser in the shape of a star.`,
+    category: 'Children',
+    size: '16.5/13/6 cm',
+    price: '9 990',
+    image: "assets/children/star.jpg"
+  },
+  {
+    id: 27,
+    name: "CHILDREN'S TOOTHBRUSH GLASS LE PETIT PRINCE ('LITTLE PRINCE')",
+    description: `Children's ceramic toothbrush holder with divider and print based on the fairy tale Le Petit Prince.`,
+    category: 'Children',
+    size: '7/8/12 cm',
+    price: '6 990',
+    image: "assets/children/prince.jpg"
+  },
+  {
+    id: 28,
+    name: "PEANUTS™ KIDS PILLOW CASE",
+    description: `Children's pillowcase made from 200 thread count washed cotton with Peanuts™ character print.`,
+    category: 'Children',
+    size: '30*50 cm',
+    price: '4 490',
+    image: "assets/children/pillowcase.jpg"
+  },
+  {
+    id: 29,
+    name: "SMALL CHILDREN'S FAUX SHEEPSKIN STAR PILLOW",
+    description: `Children's star-shaped pillow made of faux sheepskin.
+The set includes a cover and a pillow.`,
+    category: 'Children',
+    size: '9/35/35 cm',
+    price: '9 990',
+    image: "assets/children/pillow.jpg"
+  },
+  {
+    id: 30,
+    name: "CHILDREN'S SILICONE BOWL WITH A 'DUCKLING' PICTURE",
+    description: `Children's silicone bowl with a "Duckling" print.`,
+    category: 'Children',
+    size: '4/12/12 cm',
+    price: '4 490',
+    image: "assets/children/bowl.jpg"
   },
   {
     id: 31,
