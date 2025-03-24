@@ -72,7 +72,7 @@ body, html {
 }
 
 .product-title {
-    font-size: 45px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 15px;
     color: #704f40;
@@ -80,7 +80,7 @@ body, html {
 }
 
 .description {
-    font-size: 25px;
+    font-size: 20px;
     color: #5a4034;
     margin-bottom: 15px;
     max-width: 80%;
