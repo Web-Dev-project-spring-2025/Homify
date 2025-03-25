@@ -1,8 +1,18 @@
-<div class="navbar">
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homify</title>
+  <link rel="stylesheet" href="/src/app/app.component.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css">
+</head>
+<body>
+
+  <div class="navbar">
     <div class="menu-container">
-      <div class="menu">☰</div>
-      <div class="menu-panel">
+      <div class="menu" onclick="toggleMenu()">☰</div>
+      <div class="menu-panel" id="menuPanel">
         <h2 class="menu-title">
           <img src="public/homify.png" alt="Menu">
         </h2>    
@@ -14,17 +24,22 @@
           <li><a routerLink="/category/living-room">Living Room</a></li>
           <li><a routerLink="/category/kitchen">Kitchen</a></li>
         </ul>
-        
       </div>
     </div>
   
     <div class="search-container">
       <i class="bx bx-search search-icon"></i>
-      <input class="search" type="text" placeholder="Search">
+      <input 
+        #searchInput
+        class="search" 
+        type="text" 
+        placeholder="Search"
+        (keydown.enter)="searchProducts($event, searchInput.value)">
     </div>
+    
   
-  <div class="link-section">
-    <div class="links" (click)="openLogin()">
+    <div class="link-section">
+      <div class="links" (click)="openLogin()">
         <i class='bx bx-user'></i>
         <span>LOG IN</span>
       </div>
@@ -35,10 +50,13 @@
     </div>
   </div>
 
+  <router-outlet></router-outlet>
+
   <script>
     function toggleMenu() {
-      const menuPanel = document.getElementById('menuPanel');
-      menuPanel.classList.toggle('open');
+      document.getElementById('menuPanel').classList.toggle('open');
     }
   </script>
-<router-outlet></router-outlet>
+
+</body>
+</html>
