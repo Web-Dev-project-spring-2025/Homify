@@ -23,5 +23,7 @@ export class ProductService {
     return of(images);
   }
 
-  
+  getProducts(): Observable<Product[]> {
+    return of(PRODUCTS);
+  }
 }
