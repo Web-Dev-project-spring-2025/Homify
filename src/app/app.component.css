@@ -26,7 +26,7 @@ body {
 
  
 .container { 
-    display: flex; 
+    display: fixed; 
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
@@ -34,7 +34,7 @@ body {
 } 
  
 .navbar { 
-    position: fixed; 
+    position:absolute;
     top: 0; 
     width: 100%; 
     max-width: 1920px; 
@@ -83,19 +83,6 @@ body {
   }
   
 
-  
- 
-.search { 
-    border: none; 
-    border-bottom: 5px solid rgb(255, 248, 220); 
-    width: 150px; 
-    padding: 5px; 
-    outline: none; 
-    background: transparent; 
-    padding: 5px 80px; 
-    font-size: 20px; 
-    color: white; 
-} 
  
 .menu-container { 
     position: relative; 
@@ -151,7 +138,9 @@ body {
 .search-container { 
     display: flex; 
     align-items: center; 
-    gap: 10px; 
+    gap: 20px; 
+    position: relative;
+    right:-40px;
 } 
  
 .search { 
@@ -162,7 +151,7 @@ body {
     color: white; 
     padding: 5px; 
     font-size: 18px; 
-    width: 300px; 
+    width: 350px; 
 } 
  
 .search-icon { 
