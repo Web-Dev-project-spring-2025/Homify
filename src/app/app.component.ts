@@ -34,5 +34,8 @@ export class AppComponent {
       this.router.navigate(['/search', searchQuery]);
     }
   } 
+  navigateHome(){
+    this.router.navigate(['/']);
+  }
 }
 
