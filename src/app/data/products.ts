@@ -654,7 +654,7 @@ The set includes a cover and a pillow.`,
     category: 'Living room',
     size: 'Standard',
     price: '119 990',
-    image: 'assets/lighting/64.png',
+    image: 'assets/living-room/64.png',
   },
   {
     id: 65,
