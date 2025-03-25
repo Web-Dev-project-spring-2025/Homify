@@ -175,8 +175,12 @@ body {
     height: auto; 
     display: block; 
     margin-bottom: 5px; 
+    transition: transform 0.7s ease;
+    cursor: pointer; 
 } 
- 
+.menu-title img:active {
+    transform: scale(0.7); 
+}
 .menu-title { 
     margin-bottom: 0; 
     padding-bottom: 0; 
