@@ -7,8 +7,10 @@
   <link rel="stylesheet" href="/src/app/app.component.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css">
 </head>
+
 <body>
-<div class="navbar">
+  <div class="wrapper">
+  <div class="navbar">
     <div class="menu-container">
       <div class="menu" onclick="toggleMenu()">☰</div>
       <div class="menu-panel" id="menuPanel">
@@ -49,7 +51,59 @@
     </div>
   </div>
 
-  <router-outlet></router-outlet>
+  
+
+    <router-outlet></router-outlet>
+</div>
+  <footer class="footer">
+    <div class="footer-news">
+        <h3>STAY UP TO DATE WITH THE NEWS</h3>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">
+                <i class="bx bxl-facebook"></i> Facebook
+            </a> | 
+            <a href="https://instagram.com" target="_blank">
+                <i class="bx bxl-instagram"></i> Instagram
+            </a> | 
+            <a href="https://twitter.com" target="_blank">
+                <i class="bx bxl-twitter"></i> Twitter
+            </a>
+        </div>
+    </div>
+
+
+    
+    <div class="footer-columns">
+        <div class="footer-column">
+            <h4>POLITICS</h4>
+            <p>We value your privacy.<br>
+               Transparent terms of purchase.<br>
+               Your rights are our priority.<br>
+               Easy return without unnecessary questions.</p>
+        </div>
+        <div class="footer-column">
+            <h4>COMPANY</h4>
+            <p>We create comfort in your home.<br>
+               Customer trust is our goal.<br>
+               Time-tested quality.<br>
+               Together with you since 2025.</p>
+        </div>
+        <div class="footer-column">
+            <h4>CUSTOMER SERVICE DEPARTMENT</h4>
+            <p>We are always in touch.<br>
+               We will help you with any question.<br>
+               We take care of your comfort.<br>
+               Fast service — satisfied customers.</p>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p> ©2025 HOMIFY</p>
+    </div>
+    
+</footer>
+
+
 
   <script>
     function toggleMenu() {
