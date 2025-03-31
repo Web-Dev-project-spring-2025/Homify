@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background:#e8dfd0; 
+     
+}
+
+.profile-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #e8dfd0;
+    z-index: 1;
+    padding-top: 170px; 
+    padding-left: 480px;
+}
+
+
+h2 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #8b6f4f;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 500px; 
+}
+
+label {
+    font-size: 35px;
+    font-weight: bold;
+    color: #8b6f4f;
+    margin-top: 15px;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #b59d79; 
+    background: transparent;
+    font-size: 27px;
+    padding: 10px 0;
+    outline: none;
+}
+input:disabled {
+    color: gray;
+}
+
+button {
+    margin-top: 35px;
+    padding: 10px;
+    background-color: #8b6f4f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 26px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #755a3d;
+}
+.link-section {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px; 
+    
+  }
+  
+  
+  .links {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    gap: 5px; 
+    margin: 0 10px; 
+  }
+  
+  .links i {
+    transition: color 0.3s ease;
+   
+  }
+  
+  .links:hover {
+    color: #a7836c;
+  }
+  
+  .links:hover i {
+    color: #a7836c;
+  }
+

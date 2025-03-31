@@ -1,0 +1,19 @@
+<div class="products-container">
+        <div class="product-list">
+            <div class="product-card" *ngFor="let product of filteredProducts" (click)="goToProductDetail(product.id)">
+                <a [routerLink]="['/product', product.id]" class="product-link">
+                    <img [src]="product.image" [alt]="product.name">
+                    <h3>{{ product.name }}</h3>
+                </a>
+                <p class="price">₸{{ product.price }}</p>
+            </div>
+        </div>
+        
+      
+        <div *ngIf="filteredProducts.length === 0" class="no-results">
+            <h2>No results found</h2>
+    </div>
+</div>
+
+  
+  
