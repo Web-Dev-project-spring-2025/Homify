@@ -1,4 +1,4 @@
-# 🏡 Homify - online home goods store
+# 🏡❤️ Homify - online home goods store
 
 Homify is a modern and convenient online store where you can find everything to create coziness and comfort in your home. We offer a wide range of high-quality home goods, from stylish decor to practical solutions for the kitchen and bathroom.
 
