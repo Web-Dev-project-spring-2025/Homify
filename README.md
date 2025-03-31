@@ -7,7 +7,7 @@ Homify is a modern and convenient online store where you can find everything to 
 * _Nurgaliyeva Karakoz, Nurakyn Ayala, Muktar Riana._
 
 ## 🔑 Main functions:
-
+#Frontend
 - Product catalog with filtering and search
 - A page with detailed information about the product
 - Shopping cart and checkout
