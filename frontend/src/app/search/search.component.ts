@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { Product } from '../models';
 import { RouterModule } from '@angular/router';
 import { ProductService } from '../services/product.service';
+import { MatDialog } from '@angular/material/dialog';
+import { LoginComponent } from '../login/login.component';
 
 @Component({
   selector: 'app-search',
@@ -20,7 +22,8 @@ export class SearchComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private productService: ProductService,
-    private cdr: ChangeDetectorRef
+    private cdr: ChangeDetectorRef, 
+    private dialog: MatDialog
   ) {}
   ngOnInit() {
     this.productService.getProducts().subscribe({
@@ -47,6 +50,29 @@ export class SearchComponent implements OnInit {
   goToProductDetail(productId: number) {
     this.router.navigate(['/product', productId]);
   }
+  navToCart() {
+      const user = localStorage.getItem('user');
+      if (user) {
+        this.router.navigate(['/cart']);
+      } else {
+        this.dialog.open(LoginComponent, {
+          width: '400px',
+          disableClose: true,
+        });
+      }
+    }
+  
+    navToAccount() {
+      const user = localStorage.getItem('user');
+      if (user) {
+        this.router.navigate(['/profile']);
+      } else {
+        this.dialog.open(LoginComponent, {
+          width: '400px',
+          disableClose: true,
+        });
+      }
+    }
 }
 
 
