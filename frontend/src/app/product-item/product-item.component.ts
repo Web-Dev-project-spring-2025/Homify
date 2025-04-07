@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from '../services/product.service';
 import { CartService } from '../services/cart.service';
+import { MatDialog } from '@angular/material/dialog';
+import { LoginComponent } from '../login/login.component';
 
 @Component({
   selector: 'app-product-item',
@@ -18,7 +20,7 @@ export class ProductItemComponent implements OnInit {
   showShareOptions = false;
   @Input() product: any;
 
-  constructor(private route: ActivatedRoute, private productService: ProductService, private cartService: CartService, private router: Router) { }
+  constructor(private route: ActivatedRoute, private productService: ProductService, private cartService: CartService, private router: Router, private dialog: MatDialog) { }
 
   ngOnInit() {
     const productId = Number(this.route.snapshot.paramMap.get('id'));
@@ -90,19 +92,14 @@ export class ProductItemComponent implements OnInit {
   }
 
   navToAccount() {
-    this.router.navigate(['/profile']);
+    const user = localStorage.getItem('user');
+    if (user) {
+      this.router.navigate(['/profile']);
+    } else {
+      this.dialog.open(LoginComponent, {
+        width: '400px',
+        disableClose: true,
+      });
+    }
   }
-
-  /* 
-   get currentImage(): string {
-     return this.images[this.currentImageIndex];
-   }
- 
-   nextImage() {
-     this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
-   }
- 
-   prevImage() {
-     this.currentImageIndex = (this.currentImageIndex - 1 + this.images.length) % this.images.length;
-   }*/
 }
