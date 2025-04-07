@@ -54,7 +54,15 @@ export class ProductListComponent implements OnInit {
   }
 
   navToCart() {
-    this.router.navigate(['/cart']);
+    const user = localStorage.getItem('user');
+    if (user) {
+      this.router.navigate(['/cart']);
+    } else {
+      this.dialog.open(LoginComponent, {
+        width: '400px',
+        disableClose: true,
+      });
+    }
   }
 
   navToAccount() {
