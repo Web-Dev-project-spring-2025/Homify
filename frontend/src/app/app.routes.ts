@@ -6,6 +6,7 @@ import { SearchComponent } from './search/search.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { ProfileComponent } from './profile/profile.component';
 import { CartComponent } from './cart/cart.component';
+import { LoginComponent } from './login/login.component';
 
 export const routes: Routes = [
   { path: 'products', component: ProductListComponent },
@@ -15,5 +16,6 @@ export const routes: Routes = [
   { path: 'create-account', component: CreateAccountComponent},
   { path: 'profile', component: ProfileComponent },
   { path: 'cart', component: CartComponent},
+  { path:'login', component:LoginComponent},
   { path: '', component: AppComponent, pathMatch: 'full' },
 ];
