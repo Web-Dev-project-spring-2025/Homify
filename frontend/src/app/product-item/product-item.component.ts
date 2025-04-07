@@ -42,7 +42,12 @@ export class ProductItemComponent implements OnInit {
     this.showShareOptions = !this.showShareOptions;
   }
   addToCart() {
-    console.log('Adding product:', this.product);
+    const user = localStorage.getItem('user');
+    if (!user) {
+      alert('Please log in to your account to add items to your cart.');
+      return;
+    }
+  
     this.cartService.addToCart({
       id: this.product.id,
       name: this.product.name,
