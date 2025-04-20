@@ -18,7 +18,7 @@ body {
     left: 0; 
     width: 100vw;  
     height: 100vh; 
-    background: url(../assets/b1.png) no-repeat center center; 
+    background: url("assets/b1.png") no-repeat center center; 
     background-size: cover; 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
 }
