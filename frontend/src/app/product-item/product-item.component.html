@@ -1,0 +1,66 @@
+<body>
+    <div class="link-section">
+        <div class="links" (click)="navToCart()">
+          <i class='bx bx-cart'></i>
+          <span>CART</span>
+        </div>
+        <div class="links" (click)="navToAccount()">
+          <i class='bx bx-user'></i>
+          <span>ACC</span>
+        </div>        
+    </div>
+    <div class="product" *ngIf="product">
+        <div class="product-content">
+            <div class="product-image">
+                <img [src]="product.image" alt="Product Image">
+            </div> 
+            <!--
+            <div class="product-image" *ngFor="let img of product?.images"> 
+                <button class="image-slider-btn left" (click)="prevImage()"><i class='bx bx-chevron-left'></i></button>
+                <img [src]="currentImage" alt="Product Image">
+                <button class="image-slider-btn right" (click)="nextImage()"><i class='bx bx-chevron-right'></i></button>
+            </div> -->
+            
+            <div class="product-details">
+                <h3 class="product-title">{{ product.name }}</h3>
+                <pre><p class="description">{{ product.description }}</p></pre>
+                <p class="size"><strong>Size:</strong> {{ product.size }}</p>
+                <p class="price"><strong>Price:</strong> ₸{{ product.price }}</p>
+  
+                <div class="product-buttons">
+                    <button class="btn" (click)="addToCart()">
+                        <i class='bx bx-cart-alt'></i>Add to Cart
+                    </button>
+  
+                    <div class="share-container">
+                        <button class="btn" (click)="toggleShareOptions()">
+                            <i class="bx bx-share-alt"></i> Share
+                        </button>
+  
+                        <div class="share-options" *ngIf="showShareOptions">
+                            <button (click)="share('facebook')">
+                                <i class="bx bxl-facebook"></i> Facebook
+                            </button>
+                            <button (click)="share('whatsapp')">
+                                <i class="bx bxl-whatsapp"></i> WhatsApp
+                            </button>
+                            <button (click)="share('twitter')">
+                                <i class="bx bxl-twitter"></i> Twitter
+                            </button>
+                            <button (click)="share('telegram')">
+                                <i class="bx bxl-telegram"></i> Telegram
+                            </button>
+                            <button (click)="share('email')">
+                                <i class="bx bx-envelope"></i> Mail
+                            </button>
+                            <button (click)="copyLink()">
+                                <i class="bx bx-link"></i> Copy link
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+  

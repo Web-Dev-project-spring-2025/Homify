@@ -1,0 +1,50 @@
+<body>
+  <div class="link-section">
+      <div class="links" (click)="navToCart()">
+        <i class='bx bx-cart'></i>
+        <span>CART</span>
+      </div>
+      <div class="links" (click)="navToAccount()">
+        <i class='bx bx-user'></i>
+        <span>ACC</span>
+      </div>        
+  </div>
+<div class="cart">
+
+
+  <h2>Shopping Cart(<span>{{ getTotalItems() }}</span>)</h2>
+
+  <hr/>
+
+  <div *ngIf="cartItems.length > 0; else emptyCart">
+    <div *ngFor="let item of cartItems" class="cart-item" (click)="navToProduct(item.id)">
+      <img [src]="item.image" alt="{{ item.name }}">
+      <div class="cart-details">
+        <h3>{{ item.product || 'No Name Available' }}</h3> 
+        <p>₸{{ item.price }}</p>
+
+        <div class="quantity-buttons" (click)="$event.stopPropagation()">
+          <button (click)="decreaseQuantity(item.id)">−</button>
+          <!-- <div class="quantity-display">{{ item.quantity }}</div> -->
+          <input [(ngModel)]="item.quantity" (ngModelChange)="updateQuantity(item.id)" type="number" min="1" />
+
+          <button (click)="increaseQuantity(item.id)">+</button>
+        </div>
+    
+        
+        <button class="remove" (click)="removeItem(item.id);$event.stopPropagation();">Remove</button>
+      </div>
+    </div>
+    <button class="clear" (click)="clearCart()">Clear Cart</button>
+  </div>
+
+  <ng-template #emptyCart>
+    <div class="empty">
+    <i class="bx bx-cart-alt"></i>
+    <p>Your cart is empty</p>
+    <p>The items you add will be shown here.</p>
+    </div>
+  </ng-template>
+
+</div>
+</body>

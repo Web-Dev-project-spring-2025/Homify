@@ -1,0 +1,31 @@
+<body>
+    <div class="link-section">
+      <div class="links" (click)="navToCart()">
+        <i class='bx bx-cart'></i>
+        <span>CART</span>
+      </div>
+      <div class="links" (click)="navToAccount()">
+        <i class='bx bx-user'></i>
+        <span>ACC</span>
+      </div>        
+    </div>
+    <div class="products-container">
+        <div class="product-list">
+            <div class="product-card" *ngFor="let product of filteredProducts" (click)="goToProductDetail(product.id)">
+                <a [routerLink]="['/product', product.id]" class="product-link">
+                    <img [src]="product.image" [alt]="product.name">
+                    <h3>{{ product.name }}</h3>
+                </a>
+                <p class="price">₸{{ product.price }}</p>
+            </div>
+        </div>
+        
+      
+        <div *ngIf="filteredProducts.length === 0" class="no-results">
+            <h2>No results found</h2>
+    </div>
+</div>
+</body>
+
+  
+  
